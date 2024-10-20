@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>PEMBAYARAN</h1>
+        <div class="payment-methods-address">
+            <div class="payment-method">
+                <h2>Select Payment Method</h2>
+                <label>
+                    <input type="radio" name="payment-method" value="credit-card" checked>
+                    Credit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="paypal">
+                    PayPal
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="bank-transfer">
+                    Bank Transfer
+                </label>
+            </div>
+            
+            <div class="address-edit">
+                <h2>Edit Address</h2>
+                <textarea id="address" rows="4" placeholder="Enter your address here..."></textarea>
+            </div>
+        </div>
+        
+        <div class="total-payment">
+            <h2>Total Payment: <span id="totalAmount">Rp0.00</span></h2> <!-- Akan diperbarui oleh payment.js -->
+        </div>
+        
+        <button id="confirmPayment">Confirm Payment</button>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

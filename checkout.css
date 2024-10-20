@@ -1,0 +1,91 @@
+.checkout-page {
+    padding: 20px; /* Mengurangi padding untuk menempatkan konten lebih dekat ke atas */
+    max-width: 800px;
+    margin: 0 auto; /* Pusatkan halaman */
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Menggunakan Flexbox untuk mengatur konten */
+    flex-direction: column; /* Mengatur konten secara vertikal */
+    justify-content: flex-start; /* Menempatkan elemen di atas */
+}
+
+.checkout-page h1 {
+    font-size: 28px;
+    margin-bottom: 20px; /* Jarak antara judul dan daftar produk */
+    color: #333;
+}
+
+.cart-items {
+    max-height: 400px; /* Tinggi maksimum untuk kontainer produk */
+    overflow-y: auto; /* Scroll jika produk lebih dari tinggi maksimum */
+    margin-bottom: 30px; /* Jarak bawah dari daftar produk ke elemen berikutnya */
+    background-color: #fff;
+    padding: 15px; /* Padding di dalam kontainer produk */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Menyusun produk secara vertikal */
+}
+
+.checkout-item {
+    display: flex;
+    align-items: flex-start; /* Pastikan semua item dalam checkout-item mulai dari atas */
+    margin-bottom: 15px; /* Jarak antara produk */
+}
+
+.checkout-product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px; /* Jarak antara gambar dan detail produk */
+}
+
+.checkout-product-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Mengizinkan div ini mengambil sisa ruang */
+}
+
+.checkout-product-details p {
+    margin: 5px 0; /* Jarak antara detail produk */
+}
+
+.checkout-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #ffdd57;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffdd57;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px; /* Tinggi tombol untuk memastikan konsistensi */
+}
+
+.remove-item {
+    margin-left: 50px; /* Jarak antara nama produk dan tombol Hapus */
+    background-color: #dc3545; /* Warna latar belakang merah untuk tombol hapus */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+    padding: 8px 12px; /* Padding untuk tombol */
+    height: 40px; /* Tinggi yang sama seperti tombol lainnya */
+}
+
+.remove-item:hover {
+    background-color: #c82333; /* Warna saat hover */
+}

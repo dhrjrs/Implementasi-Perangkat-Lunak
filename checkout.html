@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="checkout-page">
+      <h1>Keranjang Belanja</h1>
+      <div class="cart-items">
+        <p>No items in the cart yet.</p> <!-- This can be dynamically updated with JS later -->
+      </div>
+      <div class="checkout-summary">
+        <h2>Total: <span id="checkoutTotal">Rp0.00</span></h2>
+        <button id="proceedToPayment">Checkout</button>
+        <button id="backButton">Kembali</button> <!-- Tombol Kembali -->
+      </div>
+    </div>
+    <div class="cart-items">
+        <!-- Daftar produk -->
+    </div>
+    <button id="scrollToBottom" style="display: none;">Scroll Down</button>
+    <script src="checkout.js"></script>
+  </body>
+</html>
