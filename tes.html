@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Elektronik</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="user-info">
+        <img src="images/user.png" alt="User Icon" class="user-icon" />
+        <span>User</span>
+      </div>
+      <nav>
+      
+        <ul class="nav-top">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Produk</a></li>
+          <li><a href="#">Transaksi</a></li>
+          <li><a href="#">Report</a></li>
+        </ul>
+        <ul class="nav-bottom">
+          <li><a href="#">Settings</a></li>
+          <li>
+            <button class="dark-mode-toggle" id="darkModeToggle">
+              Dark Mode
+            </button>
+          </li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <input type="text" placeholder="Search any things" class="search-bar" />
+        <button class="search-button">Search</button>
+      </header>
+
+      <section class="categories">
+        <button class="category-filter" data-category="All">All</button>
+        <button class="category-filter" data-category="Elektronik">
+          Elektronik (0)
+        </button>
+        <button class="category-filter" data-category="Pakaian">
+          Pakaian (0)
+        </button>
+        <button class="category-filter" data-category="Peralatan Rumah Tangga">
+          Peralatan Rumah Tangga (0)
+        </button>
+        <button class="category-filter" data-category="Kecantikan">
+          Kecantikan (0)
+        </button>
+      </section>
+
+      <section class="product-list">
+        <div class="product-card" data-name="DSLR Camera" data-category="Elektronik" data-description="Kamera DSLR dengan kualitas gambar tinggi, cocok untuk fotografi profesional.">
+          <img src="images/dslr-camera.png" alt="DSLR Camera" />
+          <p>DSLR Camera</p>
+          <p>Rp5.600.000</p>
+          <button>Add to cart</button>
+          <button class="detail-button">👁️</button>
+        </div>
+      
+        <div class="product-card" data-name="Wireless Headphones" data-category="Elektronik" data-description="Headphone nirkabel dengan suara jernih dan bass yang dalam.">
+          <img src="images/wireless-headphones.png" alt="Wireless Headphones" />
+          <p>Wireless Headphones</p>
+          <p>Rp830.000</p>
+          <button>Add to cart</button>
+          <button class="detail-button">👁️</button>
+        </div>
+      
+        <div class="product-card" data-name="Play Game" data-category="Elektronik" data-description="Kontroler game modern untuk pengalaman bermain yang lebih menyenangkan.">
+          <img src="images/controller.png" alt="Play Game" />
+          <p>Play Game</p>
+          <p>Rp350.000</p>
+          <button>Add to cart</button>
+          <button class="detail-button">👁️</button>
+        </div>
+      
+        <div class="product-card" data-name="Laptop" data-category="Elektronik" data-description="Laptop dengan performa tinggi, cocok untuk pekerjaan dan gaming.">
+          <img src="images/laptop.png" alt="Laptop" />
+          <p>Laptop</p>
+          <p>Rp10.500.000</p>
+          <button>Add to cart</button>
+          <button class="detail-button">👁️</button>
+        </div>
+      
+        <div class="product-card" data-name="Sweater Blouse" data-category="Pakaian" data-description="Sweater blouse yang stylish dan nyaman, cocok untuk berbagai acara.">
+          <img src="images/Sweater_Blouse.png" alt="Sweater Blouse" />
+          <p>Sweater Blouse</p>
+          <p>Rp250.000</p>
+          <button>Add to cart</button>
+          <button class="detail-button">👁️</button>
+        </div>
+      
+        <div class="product-card" data-name="Kaos" data-category="Pakaian" data-description="Kaos polos yang nyaman dan cocok untuk dipakai sehari-hari.">
+          <img src="images/kaos.png" alt="Kaos" />
+          <p>Kaos Polos</p>
+          <p>Rp175.000</p>
+          <button>Add to cart</button>
+          <button class="detail-button">👁️</button>
+        </div>
+      
+        <div class="product-card" data-name="Lipstik" data-category="Kecantikan" data-description="Lipstik dengan warna tahan lama dan formula lembut di bibir.">
+          <img src="images/lipstik.png" alt="Lipstik" />
+          <p>Lipstik</p>
+          <p>Rp100.000</p>
+          <button>Add to cart</button>
+          <button class="detail-button">👁️</button>
+        </div>
+      
+        <div class="product-card" data-name="Panci" data-category="Peralatan Rumah Tangga" data-description="Panci berkualitas tinggi yang cocok untuk memasak berbagai hidangan.">
+          <img src="images/panci.png" alt="Panci" />
+          <p>Panci</p>
+          <p>Rp45.000</p>
+          <button>Add to cart</button>
+          <button class="detail-button">👁️</button>
+        </div>
+      </section>
+      
+
+   
+    <div id="productDetailModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img id="productImage" src="" alt="Product Image" />
+          <div class="product-details">
+            <h2 id="productTitle">Product Name</h2>
+            <p id="productPrice">$0.00</p>
+            <p id="productDescription">This is a product description.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="floating-cart">
+      <a href="checkout.html">
+        <img src="images/cart.png" alt="Cart Icon" />
+        <span class="cart-count">0</span> 
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
